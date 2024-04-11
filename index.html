@@ -16,7 +16,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Diego Cavalieri</title>
+    <link rel="icon" type="image/png" href="./assets/img/icon.png" />
+    <title>e-THERN</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
@@ -31,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" class="img-fluid" alt="ima" />
+          <img src="assets/img/logo-completo.png" class="img-fluid" alt="ima" />
         </a>
         <button
           class="navbar-toggler"
@@ -46,10 +47,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a class="nav-link" href="#">Acerca de mi</a>
+              <a class="nav-link" href="#">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabajos</a>
+              <a class="nav-link" href="#">Reseñas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
@@ -87,7 +88,7 @@
 
       <div class="row">
         <div class="col-12 col-md-4">
-          <i class="fas fa-camera fa-3x my-3"></i>
+          <i class="fas fa-brush fa-4x"></i>
           <h3 class="my-3 fw-bold">Personalizado</h3>
           <p class="my-3">
             Nuestro equipo está capacitado para enrtregrar una experiencia
@@ -96,7 +97,7 @@
           </p>
         </div>
         <div class="col-12 col-md-4">
-          <i class="fas fa-bullhorn fa-3x my-3"></i>
+          <i class="fas fa-rocket fa-4x"></i>
           <h3 class="my-3 fw-bold">Vanguardia</h3>
           <p class="my-3">
             Contamos con tecnología de punta y con las mejores y últimas
@@ -105,7 +106,7 @@
           </p>
         </div>
         <div class="col-12 col-md-4">
-          <i class="far fa-map fa-3x my-3"></i>
+          <i class="far fa-handshake fa-4x"></i>
           <h3 class="my-3 fw-bold">Acompañamiento</h3>
           <p class="my-3">
             Agentes especializados en ayudarte a aclarar ideas o mejorarlas en
@@ -200,31 +201,48 @@
 
       <form>
         <div class="form-group mb-4">
-          <label class="mb-2">Nombre y apellido</label>
-          <input class="form-control" placeholder="Nombre y Apellido" />
+          <label for="name" class="mb-2">Nombre y apellido</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Nombre y Apellido"
+          />
         </div>
 
         <div class="form-group mb-4">
-          <label class="mb-2">Correo electrónico</label>
-          <input class="form-control" placeholder="example@example.cl" />
+          <label for="correo" class="mb-2">Correo electrónico</label>
+          <input
+            type="email"
+            id="correo"
+            name="email"
+            class="form-control"
+            placeholder="example@example.cl"
+          />
         </div>
 
-        <div class="form-group">
-          <label class="mb-2">¿Qué necesitas?</label>
+        <div class="form-group mb-4">
+          <label for="mensaje" class="mb-2">¿Qué necesitas?</label>
           <textarea
+            id="mensaje"
+            name="message"
             class="form-control"
             placeholder="Escribe aquí tu mensaje"
           ></textarea>
         </div>
 
         <div class="my-3 text-end">
-          <button class="btn btn-info text-light">Enviar</button>
+          <button type="submit" class="btn btn-info text-light">Enviar</button>
         </div>
       </form>
     </section>
 
     <footer class="bg-dark text-center text-light p-4">
-      <p class="mb-0">Diego Cavalieri 2024. Todos los derechos reservados.</p>
+      <p class="mb-0">
+        <img src="./assets/img/logo-completo.png" alt="Logo" />&copy; 2024
+        ActionSquare. Todos los derechos reservados.
+      </p>
     </footer>
 
     <script
