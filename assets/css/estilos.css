@@ -109,3 +109,43 @@ body {
   background-color: #78a4ad;
   border-color: #617f8a;
 }
+.construccion {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/bg-construccion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 98vh;
+  width: 100vw;
+  margin-top: 100px;
+}
+.cuerpo-construccion {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+.construccion .texto {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 5%;
+  width: 500px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+  margin: auto;
+}
+
+.construccion .texto:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.construccion h1 {
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+}
